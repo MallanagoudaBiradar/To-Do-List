@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #747715, #4e085f);
+    padding: 10px;
+}
+
+.todo{
+    background-color: white;
+    width: 100%;
+    max-width: 540px;
+    border-radius: 20px;
+    margin: 100px auto 40px;
+    padding: 40px 30px 70px;
+    
+}
+
+.todo h1{
+    color: red;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.todo h1 img{
+    width: 30px;
+    height: 30px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(234, 221, 221);
+    border-radius: 20px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    width: 80px;
+    height: 33px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(152, 152, 224);
+}
+
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    position: absolute;
+    border-radius: 50%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4f42RNUTIJfNEG95eOy2d7gnVEXNGU-BQuKq0D75I3RnRq-RH7DV8ZyiCYl22-TclKE&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;                                                                       
+}
+
+ul li.check{
+    color: #4e085f;
+    text-decoration:line-through;
+}
+
+ul li.check::before{
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/31/14/37/check-mark-1292787_1280.png");
+
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 50px;
+    color: red;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: rgb(200, 185, 185);
+
+}
